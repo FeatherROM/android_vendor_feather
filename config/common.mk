@@ -138,6 +138,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleSettingsConfig
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/feather/config/permissions/privapp-permissions-settings-feather.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings-feather.xml
+
 # Extra tools
 PRODUCT_PACKAGES += \
     curl \
