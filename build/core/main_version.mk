@@ -2,7 +2,7 @@
 ifeq ($(BUILD_FINGERPRINT),)
 FEATHER_BUILD_NUMBER := $(shell date -u +%H%M)
 CUSTOM_DEVICE ?= $(TARGET_DEVICE)
-ifneq ($(filter OFFICIAL,$(FEATHER_BUILD_TYPE)),)
+ifneq ($(filter OFFICIAL,$(RELEASE_TYPE)),)
 BUILD_SIGNATURE_KEYS := release-keys
 else
 BUILD_SIGNATURE_KEYS := test-keys
@@ -22,6 +22,6 @@ endif
 ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.feather.version=$(AOSP_BASE) \
     org.feather.version.display=$(FEATHER_RELEASE) \
-    org.feather.build_date=$(FEATHER_BUILD_DATE) \
-    org.feather.build_date_utc=$(FEATHER_BUILD_DATE_UTC) \
-    org.feather.build_type=$(FEATHER_BUILD_TYPE)
+    org.feather.build_date=$(RELEASE_DATE) \
+    org.feather.build_date_utc=$(RELEASE_DATE_UTC) \
+    org.feather.build_type=$(RELEASE_TYPE)

@@ -1,6 +1,6 @@
-FEATHER_BUILD_TYPE ?= community
-FEATHER_BUILD_DATE := $(shell date -u +%d%m%y)
-FEATHER_BUILD_DATE_UTC := $(shell date -u +%s)
+RELEASE_TYPE ?= community
+RELEASE_DATE := $(shell date -u +%d%m%y)
+RELEASE_DATE_UTC := $(shell date -u +%s)
 AOSP_BASE := 14
-FEATHER_RELEASE := Feather_$(FEATHER_BUILD)-$(AOSP_BASE)-$(FEATHER_BUILD_DATE)-$(FEATHER_BUILD_TYPE)
+FEATHER_RELEASE := Feather_$(FEATHER_DEVICE)-$(AOSP_BASE)-$(RELEASE_DATE)-$(RELEASE_TYPE)
 

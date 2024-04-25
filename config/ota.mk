@@ -1,4 +1,4 @@
-ifeq ($(FEATHER_BUILD_TYPE),)
+ifeq ($(RELEASE_TYPE), official)
 PRODUCT_PACKAGES += \
     AndroidUpdater
 endif
