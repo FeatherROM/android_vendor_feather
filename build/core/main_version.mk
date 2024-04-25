@@ -21,7 +21,7 @@ endif
 # Compress AOSP recovery, for our infra
 ifeq ($(TARGET_USES_TAR_COMPRESSED_RECOVERY),true)
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.pixelexperience.tar_compressed_recovery=true
+    org.feather.tar_compressed_recovery=true
 endif
 
 # Custom security patch
@@ -29,9 +29,9 @@ CUSTOM_SECURITY_PATCH := 2022-08-05
 
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.pixelexperience.build_security_patch=$(CUSTOM_SECURITY_PATCH)
+    org.feather.version=$(CUSTOM_VERSION_PROP) \
+    org.feather.version.display=$(CUSTOM_VERSION) \
+    org.feather.build_date=$(CUSTOM_BUILD_DATE) \
+    org.feather.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.feather.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.feather.build_security_patch=$(CUSTOM_SECURITY_PATCH)
