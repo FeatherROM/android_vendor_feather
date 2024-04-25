@@ -1,4 +1,5 @@
-ifneq ($(filter OFFICIAL CI,$(CUSTOM_BUILD_TYPE)),)
+ifeq ($(FEATHER_BUILD_TYPE),)
 PRODUCT_PACKAGES += \
-    Updates
+    AndroidUpdater
 endif
+
