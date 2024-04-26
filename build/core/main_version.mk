@@ -20,8 +20,8 @@ endif
 
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.feather.version=$(AOSP_BASE) \
-    org.feather.version.display=$(FEATHER_RELEASE) \
-    org.feather.build_date=$(RELEASE_DATE) \
-    org.feather.build_date_utc=$(RELEASE_DATE_UTC) \
-    org.feather.build_type=$(RELEASE_TYPE)
+    ro.feather.version=$(AOSP_BASE) \
+    ro.feather.version.display=$(FEATHER_RELEASE) \
+    ro.feather.build_date=$(RELEASE_DATE) \
+    ro.feather.build_date_utc=$(RELEASE_DATE_UTC) \
+    ro.feather.build_type=$(RELEASE_TYPE)
