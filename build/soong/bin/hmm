@@ -1,6 +1,6 @@
-function __print_custom_functions_help() {
+function __print_feather_functions_help() {
 cat <<EOF
-Additional LineageOS functions:
+Additional FeatherROM functions:
 - brunch:          Runs "breakfast" and "mka bacon" for the provided device target.
 - breakfast:       Wrapper for "lunch".
 - eat:             Reboots to recovery and installs the compiled OTA package.

@@ -6,8 +6,8 @@ import (
 	"android/soong/android"
 )
 
-func customExpandVariables(ctx android.ModuleContext, in string) string {
-	customVars := ctx.Config().VendorConfig("customVarsPlugin")
+func featherExpandVariables(ctx android.ModuleContext, in string) string {
+	customVars := ctx.Config().VendorConfig("featherVarsPlugin")
 
 	out, err := android.Expand(in, func(name string) (string, error) {
 		if customVars.IsSet(name) {
