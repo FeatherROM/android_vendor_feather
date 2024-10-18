@@ -519,4 +519,7 @@
         <item>device_personalization_services/WallpaperEffects__use_gpu=true</item>
         <item>device_personalization_services/WallpaperEffects__use_tpu=false</item>
     </string-array>
+
+    <!-- Whether safe headphone volume is enabled or not (country specific). -->
+    <bool name="config_safe_media_volume_enabled">false</bool>
 </resources>
