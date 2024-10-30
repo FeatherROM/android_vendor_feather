@@ -8,3 +8,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
+
+# Apps
+PRODUCT_PACKAGES += \
+    AvatarPicker
